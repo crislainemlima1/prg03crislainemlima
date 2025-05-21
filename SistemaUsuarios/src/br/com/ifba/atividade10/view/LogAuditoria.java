@@ -10,16 +10,17 @@ import java.time.LocalDateTime;
  *
  * @author crisl
  */
-public class LogAuditoria {
- 
+
+// registro de auditoria no sistema
+public class LogAuditoria { 
     private Long id;
     private Usuario usuario;
     private String acao;
     private LocalDateTime dataHora;
     private String ip;
     
+    // construtor com todos os dados
     public LogAuditoria(Long id, Usuario usuario, String acao, LocalDateTime dataHora, String ip){
-        
         this.id = id;
         this.usuario = usuario;
         this.acao = acao;
@@ -76,6 +77,8 @@ public class LogAuditoria {
 
     // toString
     @Override
+    
+     // retorna os dados do perfil
     public String toString() {
         return "LogAuditoria{" +
                 "id: " + id + "\n" +

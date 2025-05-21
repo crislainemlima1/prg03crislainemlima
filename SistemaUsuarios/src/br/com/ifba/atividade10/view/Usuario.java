@@ -10,6 +10,8 @@ import java.time.LocalDateTime;
  *
  * @author crisl
  */
+
+// registro de usuario no sitema
 public class Usuario {
     
     private Long id;
@@ -20,7 +22,7 @@ public class Usuario {
     private LocalDateTime ultimoLogin;
     private Boolean ativo;
     
-    // construtor;
+    // construtor com todos os dados
     
     public Usuario(long id, PerfilUsuario perfil, String email, String senha, String senhaSegura123, LocalDateTime ultimoLogin, boolean par1){
         
@@ -98,6 +100,8 @@ public class Usuario {
     
     
     @Override
+    
+     // retorna os dados do perfil
     public String toString() {
         return "Usuario{" +
                 "id: " + id + "\n" +

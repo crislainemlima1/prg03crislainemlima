@@ -8,14 +8,16 @@ package br.com.ifba.atividade10.view;
  *
  * @author crisl
  */
+
+    // registro de ssao no sitema
 public class Sessao {
-    
+   
     private Long id;
     private Usuario usuario;
     private String token;
     
+      // construtor com todos os dados
     public Sessao(Long id, Usuario usuario, String token){
-        
         this.id = id;
         this.usuario = usuario;
         this.token = token;
@@ -54,6 +56,8 @@ public class Sessao {
     
     // toString
     @Override
+    
+     // retorna os dados do perfil
     public String toString() {
         return "Sessao" +
                 "id: " + id + "\n" +

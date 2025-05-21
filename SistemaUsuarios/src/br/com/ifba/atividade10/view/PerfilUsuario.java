@@ -10,16 +10,14 @@ import java.util.List;
  *
  * @author crisl
  */
+// registro de perfil no sistema
 public class PerfilUsuario {
-
-   
-    
     private Long id;
     private String descricao;
     private List<String> permissoes;
     
+    // construtor com todos os dados
     public PerfilUsuario(Long id, String descricao, List<String> permissoes){
-        
         this.id = id;
         this.descricao = descricao;
         this.permissoes = permissoes;
@@ -59,6 +57,7 @@ public class PerfilUsuario {
     
     @Override
 
+    // retorna os dados do perfil
     public String toString(){
         return "PerfilUsuario{" +
                 "id: " + id + "\n" +
@@ -67,5 +66,4 @@ public class PerfilUsuario {
                 '}';
     }
 
-    
 }
